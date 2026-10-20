@@ -14,6 +14,7 @@ function PlusCircle() {
 /** Sobre dividido: foto à esquerda até a borda, texto à direita. */
 export function About() {
   const { about, aboutChecklist, images } = site;
+  const education = about.education;
   const cro = croLabel();
   const credentials = about.credentials.map((item) =>
     item.label === "Registro" ? { ...item, value: cro ?? item.value } : item,
@@ -57,6 +58,19 @@ export function About() {
               </div>
             ))}
           </dl>
+
+          <h3 className="mt-9 text-[1.0625rem]">Formação</h3>
+          <ol className="mt-4 max-w-[34rem] border-l border-gold-bright/60">
+            {education.map((item) => (
+              <li key={`${item.year}-${item.course}`} className="relative pb-4 pl-5 last:pb-0">
+                <span className="absolute -left-[5px] top-[0.45rem] h-[9px] w-[9px] rounded-full bg-gold-bright" aria-hidden="true" />
+                <p className="text-[0.9375rem] font-medium leading-snug">
+                  {item.course} <span className="font-normal text-gold">· {item.year}</span>
+                </p>
+                <p className="text-[0.8125rem] text-ink-soft">{item.institution}</p>
+              </li>
+            ))}
+          </ol>
 
           <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="btn-primary mt-8">
             Agendar avaliação

@@ -118,10 +118,17 @@ export const site = {
      */
     credentials: [
       { label: "Registro", value: null },
-      { label: "Formação", value: "Cirurgiã-dentista pela UCB (Universidade Católica de Brasília) e pós-graduada em Implantodontia" },
       { label: "Especialidade", value: "Implantodontia" },
       { label: "Atendimento", value: "Alameda Shopping, Taguatinga" },
     ] as Credential[],
+    /** Formação acadêmica, da mais recente para a mais antiga. */
+    education: [
+      { year: "2026", course: "Extensão em Facetas de Resina Estratificadas", institution: "Centro Odontológico Botelho Estética e Saúde" },
+      { year: "2023", course: "Especialização em Implantodontia", institution: "Instituto Aria" },
+      { year: "2022", course: "Extensão em Lentes em Resina", institution: "Centro Odontológico Botelho Estética e Saúde" },
+      { year: "2021", course: "Graduação em Odontologia", institution: "UCB – Universidade Católica de Brasília" },
+      { year: "2021", course: "Extensão em Lentes de Contato", institution: "Aosdeia Odontology & Academy" },
+    ],
   },
 
   treatmentsSection: {
