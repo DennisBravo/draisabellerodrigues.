@@ -58,12 +58,14 @@ export const site = {
     /** Endereço completo (rua, número, sala, CEP). A confirmar. */
     address: "Alameda Shopping, Torre A, Sala 105 – CSB 02, Lotes 01/04, Taguatinga, Brasília–DF, CEP 72015-901" as string | null,
     addressShort: "Alameda Shopping, Torre A, Sala 105 – Taguatinga",
-    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Alameda+Shopping+Torre+A+Sala+105+CSB+02+Taguatinga+Bras%C3%ADlia+DF",
+    mapsUrl: "https://share.google/f7xVPQvSakPlxmJCm",
+    /** Perfil no Google (Google Meu Negócio). */
+    googleProfileUrl: "https://share.google/f7xVPQvSakPlxmJCm",
     /** Partes do endereço para dados estruturados e Google Meu Negócio. */
     street: "CSB 02, Lotes 01/04, Torre A, Sala 105 (Alameda Shopping)",
     postalCode: "72015-901",
     /** Horário de atendimento. A confirmar. Ex.: "Seg. a sex., 8h às 18h". */
-    hours: null as string | null,
+    hours: "Segunda a sábado, 7h às 20h" as string | null,
   },
 
   seo: {

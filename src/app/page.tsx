@@ -23,7 +23,15 @@ function structuredData() {
     url: site.url,
     image: new URL(images.hero.src, site.url).toString(),
     telephone: contact.phoneE164,
-    sameAs: [contact.instagramUrl],
+    sameAs: [contact.instagramUrl, contact.googleProfileUrl],
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        opens: "07:00",
+        closes: "20:00",
+      },
+    ],
     address: {
       "@type": "PostalAddress",
       streetAddress: contact.street,
