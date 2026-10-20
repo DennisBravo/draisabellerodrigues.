@@ -37,6 +37,8 @@ export const site = {
     name: "Dra. Isabelle Rocha",
     shortName: "Isabelle Rocha",
     profession: "Cirurgiã-dentista",
+    /** Especialidade registrada no CRO-DF. */
+    specialty: "Especialista em Implantodontia",
     /** Número do CRO-DF. Obrigatório antes da publicação. Ex.: "12345". */
     cro: "14.479" as string | null,
     croState: "DF",
@@ -69,9 +71,9 @@ export const site = {
   },
 
   seo: {
-    title: "Dra. Isabelle Rocha | Odontologia Estética em Taguatinga",
+    title: "Dra. Isabelle Rocha | Implantes e Estética em Taguatinga",
     description:
-      "Conheça a Dra. Isabelle Rocha. Odontologia estética, implantodontia e reabilitação oral em Taguatinga, Brasília. Entre em contato e agende sua avaliação.",
+      "Dra. Isabelle Rocha, cirurgiã-dentista especialista em Implantodontia. Implantes, odontologia estética e reabilitação oral em Taguatinga, Brasília. Agende sua avaliação.",
   },
 
   images: {
@@ -111,7 +113,7 @@ export const site = {
 
   about: {
     title: "Beleza e saúde em cada detalhe.",
-    text: "Sou a Dra. Isabelle Rocha, cirurgiã-dentista, com atuação em implantodontia e odontologia estética. Acredito que cada sorriso merece um olhar individualizado, respeitando suas características, necessidades e naturalidade.",
+    text: "Sou a Dra. Isabelle Rocha, cirurgiã-dentista especialista em Implantodontia, com atuação também em odontologia estética e reabilitação oral. Acredito que cada sorriso merece um olhar individualizado, respeitando suas características, necessidades e naturalidade.",
     /**
      * Informações profissionais verificadas. Itens com `value: null`
      * aparecem como "a preencher". Para ocultar um item, remova-o da lista.
@@ -119,6 +121,7 @@ export const site = {
     credentials: [
       { label: "Registro", value: null },
       { label: "Formação", value: "Cirurgiã-dentista" },
+      { label: "Especialidade", value: "Implantodontia" },
       { label: "Atendimento", value: "Alameda Shopping, Taguatinga" },
     ] as Credential[],
   },
@@ -134,7 +137,7 @@ export const site = {
       id: "implantes",
       name: "Implantes dentários",
       description:
-        "Soluções para reabilitação de dentes ausentes, mediante avaliação e planejamento individualizado.",
+        "Reabilitação de dentes ausentes com especialista em Implantodontia, mediante avaliação e planejamento individualizado.",
       whatsappSubject: "implantes dentários",
     },
     {
@@ -227,7 +230,7 @@ export const site = {
     "Atendimento individualizado",
     "Planejamento antes de cada tratamento",
     "Foco em naturalidade",
-    "Atuação em implantodontia e estética",
+    "Especialista em Implantodontia",
   ],
 
   /** Etapas reais do atendimento (é uma sequência, por isso numerada). */

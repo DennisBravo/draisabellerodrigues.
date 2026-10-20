@@ -23,7 +23,7 @@ export function Hero() {
 
       <div className="container-site relative">
         <div className="py-12 md:flex md:min-h-[min(40rem,calc(100svh-7.5rem))] md:w-[48%] md:flex-col md:justify-center md:py-20 md:pr-8">
-          <p className="eyebrow hero-in">Odontologia estética em {contact.neighborhood}</p>
+          <p className="eyebrow hero-in">Implantodontia e estética em {contact.neighborhood}</p>
 
           <h1
             id="titulo-inicio"

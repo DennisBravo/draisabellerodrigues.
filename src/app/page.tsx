@@ -23,6 +23,7 @@ function structuredData() {
     url: site.url,
     image: new URL(images.hero.src, site.url).toString(),
     telephone: contact.phoneE164,
+    knowsAbout: ["Implantodontia", "Implantes dentários", "Odontologia estética", "Reabilitação oral"],
     sameAs: [contact.instagramUrl, contact.googleProfileUrl],
     openingHoursSpecification: [
       {

@@ -12,7 +12,9 @@ export function Footer() {
       <div className="container-site grid gap-10 py-16 sm:grid-cols-2 lg:grid-cols-12">
         <div className="lg:col-span-4">
           <Logo className="h-auto w-[17rem]" />
-          <p className="mt-3 text-[0.875rem] text-on-deep/70">{professional.profession}</p>
+          <p className="mt-3 text-[0.875rem] text-on-deep/70">
+            {professional.profession} · {professional.specialty}
+          </p>
           <p className="mt-1 text-[0.875rem] text-on-deep/70">
             {cro ?? (
               <>
