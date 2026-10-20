@@ -42,8 +42,6 @@ export const site = {
     /** Número do CRO-DF. Obrigatório antes da publicação. Ex.: "12345". */
     cro: "14.479" as string | null,
     croState: "DF",
-    /** Vínculo profissional informado no briefing. */
-    affiliation: "IOSP Odontologia Integrada",
   },
 
   contact: {
@@ -120,7 +118,7 @@ export const site = {
      */
     credentials: [
       { label: "Registro", value: null },
-      { label: "Formação", value: "Cirurgiã-dentista" },
+      { label: "Formação", value: "Cirurgiã-dentista pela UCB (Universidade Católica de Brasília) e pós-graduada em Implantodontia" },
       { label: "Especialidade", value: "Implantodontia" },
       { label: "Atendimento", value: "Alameda Shopping, Taguatinga" },
     ] as Credential[],
