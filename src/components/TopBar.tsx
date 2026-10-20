@@ -10,7 +10,9 @@ export function TopBar() {
       <div className="container-site flex h-10 items-center justify-between gap-6">
         <p>
           <span className="font-medium text-gold">Localização:</span>{" "}
-          {contact.address ?? `${contact.neighborhood}, ${contact.city}–${contact.state}`}
+          <a href={contact.mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:text-ink">
+            {contact.addressShort}
+          </a>
         </p>
         <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-ink">
           <WhatsAppLogo className="h-[1.1rem] w-[1.1rem]" />

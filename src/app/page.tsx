@@ -26,12 +26,14 @@ function structuredData() {
     sameAs: [contact.instagramUrl],
     address: {
       "@type": "PostalAddress",
-      ...(contact.address ? { streetAddress: contact.address } : {}),
-      addressLocality: `${contact.neighborhood}, ${contact.city}`,
+      streetAddress: contact.street,
+      postalCode: contact.postalCode,
+      addressLocality: "Brasília",
+      addressSubregion: contact.neighborhood,
       addressRegion: contact.state,
       addressCountry: "BR",
     },
-    areaServed: `${contact.neighborhood}, ${contact.city}–${contact.state}`,
+    areaServed: ["Taguatinga", "Águas Claras", "Vicente Pires", "Ceilândia", "Samambaia", "Brasília"],
   };
   return JSON.stringify(data).replace(/</g, "\\u003c");
 }

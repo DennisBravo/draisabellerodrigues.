@@ -71,9 +71,9 @@ export function Footer() {
           </li>
           <li className="flex items-start gap-2.5">
             <PinIcon className="mt-1 h-4 w-4 shrink-0 text-gold-bright" />
-            <span>
-              {contact.address ?? `${contact.neighborhood}, ${contact.city}–${contact.state}`}
-            </span>
+            <a href={contact.mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:text-gold-bright">
+              {contact.address}
+            </a>
           </li>
           {contact.hours && <li>{contact.hours}</li>}
         </FooterCol>

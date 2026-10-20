@@ -52,19 +52,24 @@ export const site = {
       "Olá, Dra. Isabelle! Conheci seu trabalho pelo site e gostaria de agendar uma avaliação.",
     instagramHandle: "@dra.isabellerrs",
     instagramUrl: "https://www.instagram.com/dra.isabellerrs/",
-    neighborhood: "Águas Claras",
+    neighborhood: "Taguatinga",
     city: "Brasília",
     state: "DF",
     /** Endereço completo (rua, número, sala, CEP). A confirmar. */
-    address: null as string | null,
+    address: "Alameda Shopping, Torre A, Sala 105 – CSB 02, Lotes 01/04, Taguatinga, Brasília–DF, CEP 72015-901" as string | null,
+    addressShort: "Alameda Shopping, Torre A, Sala 105 – Taguatinga",
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Alameda+Shopping+Torre+A+Sala+105+CSB+02+Taguatinga+Bras%C3%ADlia+DF",
+    /** Partes do endereço para dados estruturados e Google Meu Negócio. */
+    street: "CSB 02, Lotes 01/04, Torre A, Sala 105 (Alameda Shopping)",
+    postalCode: "72015-901",
     /** Horário de atendimento. A confirmar. Ex.: "Seg. a sex., 8h às 18h". */
     hours: null as string | null,
   },
 
   seo: {
-    title: "Dra. Isabelle Rocha | Odontologia Estética em Águas Claras",
+    title: "Dra. Isabelle Rocha | Odontologia Estética em Taguatinga",
     description:
-      "Conheça a Dra. Isabelle Rocha. Odontologia estética, implantodontia e reabilitação oral em Águas Claras, Brasília. Entre em contato e agende sua avaliação.",
+      "Conheça a Dra. Isabelle Rocha. Odontologia estética, implantodontia e reabilitação oral em Taguatinga, Brasília. Entre em contato e agende sua avaliação.",
   },
 
   images: {
@@ -112,7 +117,7 @@ export const site = {
     credentials: [
       { label: "Registro", value: null },
       { label: "Formação", value: "Cirurgiã-dentista" },
-      { label: "Atendimento", value: "IOSP Odontologia Integrada, Águas Claras" },
+      { label: "Atendimento", value: "Alameda Shopping, Taguatinga" },
     ] as Credential[],
   },
 

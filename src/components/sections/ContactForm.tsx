@@ -123,11 +123,10 @@ export function ContactForm() {
             </li>
             <li className="flex items-start gap-3">
               <PinIcon className="mt-1 h-4 w-4 shrink-0 text-gold" />
-              <span>
-                {contact.neighborhood}, {contact.city}–{contact.state}
-                <br />
-                {contact.address ?? <span className="pending">endereço a preencher</span>}
-              </span>
+              <a href={contact.mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                {contact.address}
+                <span className="mt-1 block text-[0.8125rem] font-medium text-gold">Ver no mapa</span>
+              </a>
             </li>
           </ul>
         </div>
