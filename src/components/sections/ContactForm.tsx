@@ -6,7 +6,7 @@ import { site, whatsappUrl } from "@/content/site";
 import { InstagramLogo, PinIcon, WhatsAppIcon, WhatsAppLogo } from "../Icons";
 
 const CHEVRON = `url("data:image/svg+xml,${encodeURIComponent(
-  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#6b5d54" stroke-width="1.5"><path d="m6 9 6 6 6-6"/></svg>',
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#5e5244" stroke-width="1.5"><path d="m6 9 6 6 6-6"/></svg>',
 )}")`;
 
 /**

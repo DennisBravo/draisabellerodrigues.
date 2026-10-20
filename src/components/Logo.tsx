@@ -9,12 +9,12 @@ export function Logo({ className, preload = false }: { className?: string; prelo
   return (
     <Image
       src="/images/logo-horizontal.png"
-      alt="Isabelle Rocha"
-      width={1000}
-      height={299}
+      alt="Dra. Isabelle Rocha"
+      width={1100}
+      height={283}
       preload={preload}
       sizes="(min-width: 1024px) 300px, 210px"
-      className={className ?? "h-auto w-[12.5rem] md:w-[13rem] lg:w-[18rem]"}
+      className={className ?? "h-auto w-[13rem] md:w-[13.5rem] lg:w-[19rem]"}
     />
   );
 }

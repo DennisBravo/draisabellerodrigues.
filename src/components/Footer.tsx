@@ -45,7 +45,7 @@ export function Footer() {
         <FooterCol title="Navegação" className="lg:col-span-2">
           {nav.map((item) => (
             <li key={item.href}>
-              <Link href={item.href} className="hover:text-gold">
+              <Link href={item.href} className="hover:text-gold-bright">
                 {item.label}
               </Link>
             </li>
@@ -55,7 +55,7 @@ export function Footer() {
         <FooterCol title="Tratamentos" className="lg:col-span-3">
           {treatments.map((t) => (
             <li key={t.id}>
-              <Link href={`/#${t.id}`} className="hover:text-gold">
+              <Link href={`/#${t.id}`} className="hover:text-gold-bright">
                 {t.name}
               </Link>
             </li>
@@ -64,13 +64,13 @@ export function Footer() {
 
         <FooterCol title="Contato" className="lg:col-span-3">
           <li>
-            <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 hover:text-gold">
+            <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 hover:text-gold-bright">
               <WhatsAppLogo className="h-5 w-5" />
               {contact.phoneDisplay}
             </a>
           </li>
           <li className="flex items-start gap-2.5">
-            <PinIcon className="mt-1 h-4 w-4 shrink-0 text-gold" />
+            <PinIcon className="mt-1 h-4 w-4 shrink-0 text-gold-bright" />
             <span>
               {contact.address ?? `${contact.neighborhood}, ${contact.city}–${contact.state}`}
             </span>
@@ -82,7 +82,7 @@ export function Footer() {
       <div className="border-t border-deep-line">
         <div className="container-site flex flex-col gap-3 py-6 text-[0.8125rem] text-on-deep/60 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 {professional.name}</p>
-          <Link href="/politica-de-privacidade" className="hover:text-gold">
+          <Link href="/politica-de-privacidade" className="hover:text-gold-bright">
             Política de Privacidade
           </Link>
         </div>
@@ -95,7 +95,7 @@ function FooterCol({ title, className, children }: { title: string; className?: 
   return (
     <div className={className}>
       <p className="text-[1.15rem] font-semibold text-white">{title}</p>
-      <span className="mt-3 block h-[2px] w-8 bg-cta" aria-hidden="true" />
+      <span className="mt-3 block h-[2px] w-8 bg-gold-bright" aria-hidden="true" />
       <ul className="mt-5 space-y-2.5 text-[0.9375rem] text-on-deep/80">{children}</ul>
     </div>
   );

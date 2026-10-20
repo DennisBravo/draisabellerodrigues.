@@ -12,7 +12,7 @@ export function Highlights() {
           const Icon = icons[i % icons.length];
           return (
             <li key={item.title} className="flex items-start gap-3 lg:border-l lg:border-deep-line lg:pl-6 lg:first:border-l-0 lg:first:pl-0">
-              <Icon className="h-6 w-6 shrink-0 text-gold" />
+              <Icon className="h-6 w-6 shrink-0 text-gold-bright" />
               <div>
                 <p className="text-[0.9375rem] font-semibold text-white">{item.title}</p>
                 <p className="text-[0.8125rem] text-on-deep/70">{item.text}</p>

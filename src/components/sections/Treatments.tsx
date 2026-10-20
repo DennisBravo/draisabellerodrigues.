@@ -58,7 +58,7 @@ export function Treatments() {
                   <Icon className="h-9 w-9" />
                 </span>
                 <h3 className="mt-6 text-[1.125rem]">{t.name}</h3>
-                <span className="mt-3 h-[2px] w-8 bg-cta" aria-hidden="true" />
+                <span className="mt-3 h-px w-8 bg-gold-bright" aria-hidden="true" />
                 <p className="mt-4 flex-1 text-[0.9375rem] text-ink-soft">{t.description}</p>
                 <a
                   href={whatsappUrl(treatmentMessage(t.whatsappSubject))}

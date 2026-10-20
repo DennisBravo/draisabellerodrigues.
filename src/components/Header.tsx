@@ -95,7 +95,7 @@ export function Header() {
             href={whatsappUrl()}
             target="_blank"
             rel="noopener noreferrer"
-            className="whitespace-nowrap rounded-full bg-cta px-5 py-2.5 text-[0.875rem] font-semibold text-white transition-colors hover:bg-cta-dark"
+            className="btn-primary !min-h-0 whitespace-nowrap !px-5 !py-2.5 !text-[0.875rem]"
           >
             Agendar avaliação
           </a>

@@ -24,7 +24,7 @@ export function Steps() {
               const Icon = icons[i % icons.length];
               return (
                 <li key={step.title} className="flex gap-4">
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-cta text-white" aria-hidden="true">
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-gold-bright bg-white text-gold" aria-hidden="true">
                     <Icon className="h-6 w-6" />
                   </span>
                   <div>

@@ -5,7 +5,7 @@ import { Dot } from "../Title";
 function PlusCircle() {
   return (
     <svg viewBox="0 0 20 20" className="h-5 w-5 shrink-0" aria-hidden="true" focusable="false">
-      <circle cx="10" cy="10" r="10" fill="var(--color-gold)" />
+      <circle cx="10" cy="10" r="10" fill="var(--color-gold-bright)" />
       <path d="M10 6v8M6 10h8" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" />
     </svg>
   );

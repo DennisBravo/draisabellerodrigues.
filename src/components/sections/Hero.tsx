@@ -8,7 +8,7 @@ export function Hero() {
   const { hero, images, contact } = site;
 
   return (
-    <section id="inicio" aria-labelledby="titulo-inicio" className="relative overflow-hidden bg-[#dde6ee]">
+    <section id="inicio" aria-labelledby="titulo-inicio" className="relative overflow-hidden bg-sand">
       <div className="relative aspect-[5/4] w-full sm:aspect-[16/10] md:absolute md:inset-y-0 md:right-0 md:aspect-auto md:w-[50%]">
         <Image
           src={images.hero.src}

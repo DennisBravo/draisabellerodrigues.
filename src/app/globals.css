@@ -1,20 +1,21 @@
 @import "tailwindcss";
 
 @theme {
-  /* Paleta clínica moderna: branco, cinza-azulado, azul de destaque e laranja nos botões. */
-  --color-paper: #ffffff;
+  /* Paleta da marca: dourado da logo, marfim do mármore e marrom profundo. */
+  --color-paper: #fbf8f3;
   --color-white: #ffffff;
-  --color-sand: #eef3f7;
-  --color-nude: #d7e3ec;
-  --color-ink: #1b2733;
-  --color-ink-soft: #5e6b78;
-  --color-gold: #1c9ad6;
-  --color-line: #e3e9ee;
-  --color-deep: #18222d;
-  --color-deep-line: #2c3a47;
-  --color-on-deep: #e8eef3;
-  --color-cta: #f28c1b;
-  --color-cta-dark: #d9770c;
+  --color-sand: #f2ebe0;
+  --color-nude: #e6d9c6;
+  --color-ink: #2b231b;
+  --color-ink-soft: #5e5244;
+  --color-gold: #8c6828; /* dourado para textos sobre fundo claro (contraste AA) */
+  --color-gold-bright: #c9a24a; /* dourado da logo: ícones, linhas e textos sobre fundo escuro */
+  --color-line: #e7ddce;
+  --color-deep: #1f1a15;
+  --color-deep-line: #3a3128;
+  --color-on-deep: #e9e1d5;
+  --color-cta: #8c6828;
+  --color-cta-dark: #74561f;
 
   --font-serif: "Rubik Variable", "Rubik", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-sans: "Rubik Variable", "Rubik", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -87,7 +88,7 @@
     gap: 0.6rem;
     min-height: 3.25rem;
     padding: 0 1.75rem;
-    background: var(--color-cta);
+    background: linear-gradient(135deg, #a88238 0%, var(--color-cta) 55%, #7a5a21 100%);
     color: #ffffff;
     font-size: 0.9375rem;
     font-weight: 600;
@@ -112,15 +113,16 @@
 
   .eyebrow::before {
     content: "";
-    width: 0.9rem;
-    height: 2px;
-    background: currentColor;
+    width: 1.4rem;
+    height: 1px;
+    background: var(--color-gold-bright);
   }
 
   .card-soft {
     background: #ffffff;
     border-radius: 6px;
-    box-shadow: 0 10px 30px -18px rgba(24, 34, 45, 0.25);
+    box-shadow: 0 10px 30px -18px rgba(43, 35, 27, 0.28);
+    border: 1px solid var(--color-line);
   }
 
   .link-quiet {
