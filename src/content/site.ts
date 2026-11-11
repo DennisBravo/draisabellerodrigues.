@@ -45,9 +45,9 @@ export const site = {
   },
 
   contact: {
-    phoneDisplay: "(61) 99816-0478",
-    phoneE164: "+5561998160478",
-    whatsappNumber: "5561998160478",
+    phoneDisplay: "(61) 99588-3459",
+    phoneE164: "+5561995883459",
+    whatsappNumber: "5561995883459",
     whatsappDefaultMessage:
       "Olá, Dra. Isabelle! Conheci seu trabalho pelo site e gostaria de agendar uma avaliação.",
     instagramHandle: "@dra.isabellerrs",
