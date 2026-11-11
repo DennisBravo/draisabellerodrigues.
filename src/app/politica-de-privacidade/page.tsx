@@ -28,8 +28,14 @@ const sections: { title: string; body: React.ReactNode }[] = [
       <p>
         Este site não pede cadastro e não utiliza cookies de rastreamento, publicidade ou ferramentas de análise de
         audiência. O formulário de contato apenas monta uma mensagem e a abre no seu WhatsApp: nome e assunto não são
-        enviados nem armazenados pelo site. As fontes tipográficas são servidas pelo próprio site, sem chamadas a
-        serviços de terceiros.
+        enviados nem armazenados pelo site. As fontes tipográficas são servidas pelo próprio site.
+        <br />
+        <br />
+        Para a clínica saber como as pessoas chegam até ela, quando você toca em um botão de WhatsApp o site acrescenta
+        à mensagem um código curto (por exemplo, &ldquo;ref. AB12CD&rdquo;) e envia ao sistema de atendimento da clínica
+        apenas a origem da visita: o site de onde você veio (como o Google ou o Instagram), a página de entrada e, se
+        houver, os parâmetros de campanha do link. Essas informações ficam guardadas no seu próprio navegador por até 90
+        dias, sem cookies e sem nenhum dado pessoal, e servem só para medir de onde vêm os contatos.
       </p>
     ),
   },

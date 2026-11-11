@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "@fontsource-variable/rubik";
 import "./globals.css";
 import { site } from "@/content/site";
@@ -41,7 +42,11 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* Origem dos contatos do WhatsApp (sistema Aurora): sem cookies e sem dados pessoais */}
+        <Script src="https://aurora.draisabellerodrigues.com.br/t.js" strategy="afterInteractive" />
+      </body>
     </html>
   );
 }

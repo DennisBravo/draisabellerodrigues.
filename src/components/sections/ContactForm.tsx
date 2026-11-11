@@ -29,7 +29,9 @@ export function ContactForm() {
     setError("");
     const topic = subject === contactForm.subjectOptions[0] ? "uma avaliação" : `uma avaliação sobre ${subject.toLowerCase()}`;
     const message = `Olá, Dra. Isabelle! Meu nome é ${trimmed}. Conheci seu trabalho pelo site e gostaria de agendar ${topic}.`;
-    window.open(whatsappUrl(message), "_blank", "noopener,noreferrer");
+    // O formulário abre o WhatsApp sem link clicado: o código de origem é pedido direto ao rastreio da Aurora
+    const ref = (window as unknown as { AuroraTrack?: { ref: () => string } }).AuroraTrack?.ref();
+    window.open(whatsappUrl(ref ? `${message} ${ref}` : message), "_blank", "noopener,noreferrer");
   }
 
   return (
