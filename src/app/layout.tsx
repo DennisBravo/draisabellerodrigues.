@@ -3,6 +3,7 @@ import Script from "next/script";
 import "@fontsource-variable/rubik";
 import "./globals.css";
 import { site } from "@/content/site";
+import { MetaPixel } from "@/components/MetaPixel";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -46,6 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         {/* Origem dos contatos do WhatsApp (sistema Aurora): sem cookies e sem dados pessoais */}
         <Script src="https://aurora.draisabellerodrigues.com.br/t.js" strategy="afterInteractive" />
+        <MetaPixel />
       </body>
     </html>
   );

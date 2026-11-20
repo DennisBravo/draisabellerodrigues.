@@ -33,6 +33,9 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://draisabellerodrigues.com.br",
   locale: "pt_BR",
 
+  /** Pixel da Meta (Gerenciador de Eventos). Vazio = pixel desligado. */
+  metaPixelId: "" as string,
+
   professional: {
     name: "Dra. Isabelle Rocha",
     shortName: "Isabelle Rocha",

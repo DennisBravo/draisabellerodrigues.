@@ -26,9 +26,15 @@ const sections: { title: string; body: React.ReactNode }[] = [
     title: "O que este site coleta",
     body: (
       <p>
-        Este site não pede cadastro e não utiliza cookies de rastreamento, publicidade ou ferramentas de análise de
-        audiência. O formulário de contato apenas monta uma mensagem e a abre no seu WhatsApp: nome e assunto não são
-        enviados nem armazenados pelo site. As fontes tipográficas são servidas pelo próprio site.
+        Este site não pede cadastro. O formulário de contato apenas monta uma mensagem e a abre no seu WhatsApp: nome e
+        assunto não são enviados nem armazenados pelo site. As fontes tipográficas são servidas pelo próprio site.
+        <br />
+        <br />
+        Para medir os resultados dos anúncios da clínica no Facebook e no Instagram, o site usa o Pixel da Meta. Ele
+        grava cookies no seu navegador e informa à Meta que a página foi visitada e se um botão de WhatsApp ou o
+        formulário foi usado, sem enviar o seu nome nem o conteúdo da mensagem. A Meta trata esses dados conforme a
+        política de privacidade dela, e você pode limitar esse uso nas configurações de anúncios da sua conta Meta ou
+        bloqueando cookies de terceiros no navegador.
         <br />
         <br />
         Para a clínica saber como as pessoas chegam até ela, quando você toca em um botão de WhatsApp o site acrescenta
