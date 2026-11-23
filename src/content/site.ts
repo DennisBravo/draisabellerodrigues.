@@ -33,6 +33,21 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://draisabellerodrigues.com.br",
   locale: "pt_BR",
 
+  /**
+   * Pixel da Meta e tags do Google. Com valor `null` (ou lista vazia) nada é carregado.
+   * - metaPixelId: ID do conjunto de dados/Pixel (só números), do Gerenciador de Eventos da Meta.
+   * - googleTagIds: IDs das tags do Google, ex.: "G-XXXXXXX" (Analytics) e "AW-XXXXXXXXX" (Google Ads).
+   * - googleAdsWhatsAppConversion: rótulo da conversão do Google Ads para clique no WhatsApp,
+   *   no formato "AW-XXXXXXXXX/AbCdEfGh".
+   * Cada clique em um botão de WhatsApp é registrado como "Contact" na Meta e como
+   * "whatsapp_click" (e a conversão acima, se houver) no Google.
+   */
+  tracking: {
+    metaPixelId: null as string | null,
+    googleTagIds: [] as string[],
+    googleAdsWhatsAppConversion: null as string | null,
+  },
+
   professional: {
     name: "Dra. Isabelle Rocha",
     shortName: "Isabelle Rocha",
@@ -296,3 +311,8 @@ export function treatmentMessage(subject: string): string {
 
 export const croLabel = (): string | null =>
   site.professional.cro ? `CRO-${site.professional.croState} ${site.professional.cro}` : null;
+
+/** Verdadeiro quando o Pixel da Meta ou alguma tag do Google está configurado. */
+export function hasAdTracking(): boolean {
+  return Boolean(site.tracking.metaPixelId) || site.tracking.googleTagIds.length > 0;
+}

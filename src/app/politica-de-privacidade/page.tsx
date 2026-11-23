@@ -3,7 +3,7 @@ import Link from "next/link";
 import { TopBar } from "@/components/TopBar";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { site, whatsappUrl } from "@/content/site";
+import { hasAdTracking, site, whatsappUrl } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Política de Privacidade",
@@ -26,8 +26,11 @@ const sections: { title: string; body: React.ReactNode }[] = [
     title: "O que este site coleta",
     body: (
       <p>
-        Este site não pede cadastro e não utiliza cookies de rastreamento, publicidade ou ferramentas de análise de
-        audiência. O formulário de contato apenas monta uma mensagem e a abre no seu WhatsApp: nome e assunto não são
+        Este site não pede cadastro.{" "}
+        {hasAdTracking()
+          ? "Ele utiliza ferramentas de medição e publicidade da Meta (Facebook e Instagram) e do Google, que podem usar cookies e identificadores do navegador para contar visitas, medir quantas pessoas tocam no botão de WhatsApp e mostrar anúncios da clínica a quem já visitou o site. Essas empresas tratam esses dados segundo as políticas de privacidade delas. Você pode bloquear ou apagar cookies nas configurações do seu navegador."
+          : "Ele não utiliza cookies de rastreamento, publicidade ou ferramentas de análise de audiência."}{" "}
+        O formulário de contato apenas monta uma mensagem e a abre no seu WhatsApp: nome e assunto não são
         enviados nem armazenados pelo site. As fontes tipográficas são servidas pelo próprio site.
         <br />
         <br />
