@@ -32,6 +32,9 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   formatDetection: { telephone: false },
+  ...(site.tracking.metaDomainVerification
+    ? { other: { "facebook-domain-verification": site.tracking.metaDomainVerification } }
+    : {}),
 };
 
 export const viewport: Viewport = {

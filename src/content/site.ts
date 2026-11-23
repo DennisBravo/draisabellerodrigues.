@@ -43,7 +43,9 @@ export const site = {
    * "whatsapp_click" (e a conversão acima, se houver) no Google.
    */
   tracking: {
-    metaPixelId: null as string | null,
+    metaPixelId: "1547286184091587" as string | null,
+    /** Código de verificação do domínio na Meta (Configurações do negócio > Domínios). */
+    metaDomainVerification: "f0bu1fdf6xwdua5af3pdy0xgljofn2" as string | null,
     googleTagIds: [] as string[],
     googleAdsWhatsAppConversion: null as string | null,
   },
