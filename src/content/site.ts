@@ -46,7 +46,7 @@ export const site = {
     metaPixelId: "1547286184091587" as string | null,
     /** Código de verificação do domínio na Meta (Configurações do negócio > Domínios). */
     metaDomainVerification: "f0bu1fdf6xwdua5af3pdy0xgljofn2" as string | null,
-    googleTagIds: [] as string[],
+    googleTagIds: ["G-3866W88SSE"] as string[],
     googleAdsWhatsAppConversion: null as string | null,
   },
 
