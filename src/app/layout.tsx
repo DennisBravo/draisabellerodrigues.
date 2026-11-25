@@ -49,7 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         {children}
         {/* Origem dos contatos do WhatsApp (sistema Aurora): sem cookies e sem dados pessoais */}
-        <Script src="https://aurora.draisabellerodrigues.com.br/t.js" strategy="afterInteractive" />
+        <Script src="https://aurora.draisabellerodrigues.com.br/t.js?k=s_Biu2vrcca89FcRpV" strategy="afterInteractive" />
         {/* Pixel da Meta e tags do Google: só carregam se houver IDs em site.tracking */}
         <AdTracking />
       </body>
